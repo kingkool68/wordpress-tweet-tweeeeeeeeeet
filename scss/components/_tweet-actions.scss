@@ -1,0 +1,75 @@
+/**
+ * Colors
+ */
+$retweet-green: #19cf86;
+$like-red: #e81c4f;
+$twitter-blue: #1da1f2;
+$darker-gray: #333;
+
+
+.tweet-actions {
+	clear: left;
+	display: table;
+	width: 100%;
+	max-width: em(360px);
+	padding-left: em(40px);
+}
+
+.tweet-actions a {
+	color: #8899a6;
+	display: table-cell;
+	font-size: em(16px);
+	padding: em(12px, 16px) 0 em(2px, 16px);
+	text-align: center;
+	width: 20%;
+	transform: scale(1);
+}
+.tweet-actions a:hover,
+.tweet-actions a:focus {
+	transform: scale(1.35);
+}
+
+.tweet-actions .like {
+	// It's bigger than the rest of the icons so we need to scale it down
+	font-size: 0.88em;
+}
+
+.tweet-actions .retweet:hover,
+.tweet-actions .retweet:focus,
+.tweet-actions :hover .icon-retweet,
+.tweet-actions :focus .icon-retweet {
+	fill: $retweet-green;
+	color: $retweet-green;
+}
+.tweet-actions .like:hover,
+.tweet-actions .like:focus,
+.tweet-actions :hover .icon-heart,
+.tweet-actions :focus .icon-heart {
+	fill: $like-red;
+	color: $like-red;
+}
+.tweet-actions .twitter:hover,
+.tweet-actions .twitter:focus,
+.tweet-actions :hover .icon-twitter,
+.tweet-actions :focus .icon-twitter {
+	fill: $twitter-blue;
+	color: $twitter-blue;
+}
+.tweet-actions .permalink:hover,
+.tweet-actions .permalink:focus,
+.tweet-actions :hover .icon-link,
+.tweet-actions :focus .icon-link,
+
+.tweet-actions .reply:hover,
+.tweet-actions .reply:focus,
+.tweet-actions :hover .icon-reply,
+.tweet-actions :focus .icon-reply {
+	fill: $darker-gray;
+	color: $darker-gray;
+}
+
+@media( max-width: em(480px) ) {
+	.tweet-actions {
+		padding-left: 0;
+	}
+}

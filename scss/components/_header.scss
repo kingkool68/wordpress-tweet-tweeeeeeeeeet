@@ -1,0 +1,42 @@
+.site-header .profile-banner-holder {
+	position: relative;
+	padding-top: 25%;
+}
+
+.site-header .profile-banner {
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+.site-header form {
+	position: absolute;
+	right: 5%;
+	top: 15%;
+}
+
+.search-form .text-input {
+	border: 0 none;
+	padding: em(6px, 14px);
+	font-size: em(14px);
+	float: left;
+}
+
+.search-form .submit-button {
+	float: left;
+	border: 0 none;
+	background-color: #ddd;
+	font-size: em(16px);
+	height: em(30px);
+}
+
+@media(max-width: em(640px)) {
+	.site-header .profile-banner-holder {
+		padding-top: 33.3333%;
+	}
+}

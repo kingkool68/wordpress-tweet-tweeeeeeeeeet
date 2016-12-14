@@ -1,0 +1,42 @@
+.profile {
+	margin-bottom: em(32px);
+}
+
+.profile .holder {
+	display: block;
+	border: em(5px) solid #fff;
+	border-radius: em(12px);
+	margin-bottom: em(8px);
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 em(1px) em(1px) rgba(136,153,166,0.35);
+	background-color: #fff;
+	width: em(175px);
+}
+.profile img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: em(8px);
+}
+.profile .name {
+	font-size: em(18px);
+	font-weight: 700;
+	margin-bottom: em(4px, 18px);
+	opacity: 0.8;
+}
+.profile .username {
+	font-size: em(14px);
+	margin-bottom: em(12px, 14px);
+}
+.profile .description {
+	margin-bottom: em(8px);
+	line-height: 1.333;
+}
+.profile .deets li {
+	margin-bottom: em(4px);
+}
+.profile .deets .icon {
+	color: #91aaba;
+	width: em(24px);
+}

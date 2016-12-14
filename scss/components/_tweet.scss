@@ -1,0 +1,135 @@
+.tweet {
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background-color: #fff;
+	padding: em(9px) em(12px);
+	font-size: em(16px);
+	line-height: 1.375;
+}
+.tweet:first-of-type {
+	border-top-left-radius: em(5px);
+	border-top-right-radius: em(5px);
+}
+.tweet:last-of-type {
+	border-bottom: 1px solid #ccc;
+	border-bottom-left-radius: em(5px);
+	border-bottom-right-radius: em(5px);
+}
+
+.tweet .context {
+	font-size: em(13px);
+	padding-bottom: em(3px, 13px);
+	padding-left: em(34px, 13px);
+}
+
+.tweet .context,
+.tweet .context a {
+	color: #8899a6;
+}
+
+.tweet .context .icon {
+	position: relative;
+	top: em(1.5px);
+	margin-right: em(5px);
+}
+
+.tweet .header {
+	font-size: em(13px);
+	margin-bottom: em(8px, 13px);
+}
+
+.tweet .content {
+	padding-left: em(60px);
+}
+.tweet .content p {
+	line-height: 1.35;
+	margin-bottom: em(8px);
+	word-wrap: break-word;
+}
+.tweet .content a {
+	word-wrap: break-word;
+}
+.tweet img,
+.tweet-video .wp-video {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.tweet-video {
+	background-color: #000;
+}
+
+.tweet .username-link {
+	text-decoration: none;
+}
+
+.tweet .avatar {
+	float: left;
+	margin-right: em(10px);
+	margin-top: em(4px);
+	border-radius: em(4px);
+}
+
+.tweet .full-name {
+	font-weight: 600;
+	font-size: em(14px, 13px);
+	color: #000;
+}
+.tweet :hover .full-name,
+.tweet :focus .full-name {
+	text-decoration: underline;
+	color: #1F98C7;
+}
+
+.tweet .username,
+.tweet :hover .username,
+.tweet :focus .username {
+	color: #8899a6;
+	text-decoration: none;
+}
+
+.tweet .date {
+	color: #8899a6;
+}
+
+.tweet .date:hover,
+.tweet .date:focus {
+	color: #1F98C7;
+}
+
+@media(max-width: em(640px)) {
+	.tweet {
+		border-left: 0 none;
+		border-right: 0 none;
+		padding-left: em(16px);
+		padding-right: em(16px);
+	}
+	.tweet:first-of-type {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	.tweet:last-of-type {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.tweet .full-name {
+		display: block;
+	}
+}
+@media( max-width: em(480px) ) {
+	.tweet .header {
+		overflow: auto;
+		height: 100%;
+	}
+	.tweet .bullet {
+		display :none;
+	}
+	.tweet .username {
+		display: block;
+	}
+	.tweet .content {
+		padding-left: 0;
+		clear: left;
+	}
+}

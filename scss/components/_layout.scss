@@ -1,0 +1,78 @@
+.holder {
+	position: relative;
+}
+.profile {
+	position: absolute;
+	right: 73%;
+	top: em(-110px);
+	width: 25%;
+}
+
+main {
+	margin: 0 auto;
+	width: 40%;
+}
+
+.sidebar {
+	position: absolute;
+	right: 2%;
+	top: 0;
+	width: 25%;
+}
+
+/*
+.admin-bar .profile,
+.admin-bar .sidebar {
+	top: 32px;
+}
+*/
+
+@media( min-width: em(1440px) ) {
+	.holder {
+		max-width: em(1440px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media( max-width: em(960px) ) {
+	body,
+	main,
+	.profile,
+	.sidebar {
+		position: static;
+	}
+	main {
+		float: left;
+		width: 65%;
+		margin-left: 2.5%;
+	}
+	.profile,
+	.sidebar {
+		float: right;
+		clear: right;
+		width: 27.5%;
+		margin-right: 2.5%;
+	}
+	.profile {
+		margin-top: em(-80px);
+	}
+}
+@media( max-width: em(640px) ) {
+	main,
+	.profile,
+	.sidebar {
+		position: static;
+		margin-left: auto;
+		margin-right: auto;
+		width: 95%;
+		max-width: none;
+		float: none;
+	}
+	main {
+		width: 100%;
+	}
+	.profile {
+		margin-top: 0;
+	}
+}
