@@ -10,3 +10,5 @@ See it in action! <http://tweets.kingkool68.com>
 3. Download and upload this theme to your `/wp-content/themes/` directory
 4. Activate the *Tweet Tweeeeeeeeeet* theme 
 5. Enjoy!
+
+*Inspired by the [Ozh' Tweet Archive Theme](https://github.com/ozh/ozh-tweet-archive-theme)*
