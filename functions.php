@@ -1,6 +1,7 @@
 <?php
 // Supports
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'title-tag' );
 
 $files_to_include = array(
 	'sidebars.php',
